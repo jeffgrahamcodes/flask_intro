@@ -5,9 +5,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return render_template("first_page.html")
-
-
-@app.route("/fancy")
-def hello_world_fancy():
-    return render_template("second_page.html")
+    return render_template("jinja.html", name="Jeff", template_name="Jinja2")
